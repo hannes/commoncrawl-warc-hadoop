@@ -4,14 +4,14 @@ This repository contains a Hadoop tool for dealing with the new CommonCrawl WARC
 
 So
 ```bash
-    git clone https://github.com/hannesmuehleisen/warc-discovery.git
-    cd warc-discovery
-    mvn install
-    cd ..
-    git clone https://github.com/hannesmuehleisen/commoncrawl-warc-hadoop
-    cd commoncrawl-warc-hadoop
-    # [add your payload to src/main/java/nl/cwi/da/commoncrawl/TagTool.java]
-    mvn assembly:assembly
+git clone https://github.com/hannesmuehleisen/warc-discovery.git
+cd warc-discovery
+mvn install
+cd ..
+git clone https://github.com/hannesmuehleisen/commoncrawl-warc-hadoop
+cd commoncrawl-warc-hadoop
+# [add your payload to src/main/java/nl/cwi/da/commoncrawl/TagTool.java]
+mvn assembly:assembly
 ```
 
 To run this on Amazon EMR, you can simply add the produced JAR (warczenschwein-0.0.1-SNAPSHOT-job.jar) as a justom "Step", and add parameters, e.g. 
